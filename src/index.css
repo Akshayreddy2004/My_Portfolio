@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-matte-black text-white overflow-x-clip font-sans;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-glass backdrop-blur-xl border border-glass-border shadow-2xl;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .ambient-glow {
+    @apply absolute rounded-full opacity-30 mix-blend-screen filter blur-[100px];
+    background: radial-gradient(circle, rgba(255,123,0,0.8) 0%, rgba(255,204,0,0) 70%);
+  }
+}
