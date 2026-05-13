@@ -3,10 +3,13 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Navigation from './components/Navigation';
 import DetailsView from './components/DetailsView';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
-    <div className="min-h-screen bg-matte-black text-white overflow-x-clip relative font-sans selection:bg-accent-yellow selection:text-black pb-20">
+    <>
+      <Analytics />
+      <div className="min-h-screen bg-matte-black text-white overflow-x-clip relative font-sans selection:bg-accent-yellow selection:text-black pb-20">
       {/* Background glowing orbs */}
       <div className="ambient-glow w-[800px] h-[800px] -top-[200px] -right-[200px]"></div>
       <div className="ambient-glow w-[600px] h-[600px] top-[40%] -left-[200px] opacity-20"></div>
@@ -19,8 +22,9 @@ function App() {
         <DetailsView />
       </main>
 
-      <Navigation />
-    </div>
+        <Navigation />
+      </div>
+    </>
   );
 }
 
