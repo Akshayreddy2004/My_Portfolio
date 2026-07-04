@@ -16,7 +16,8 @@ const DetailsView = () => {
       category: "AI Accessibility Tool",
       description: "Developed an AI-powered system that converts sign language gestures into speech to improve accessibility for speech-impaired individuals.",
       achievements: "Real-time speech conversion using Gesture recognition AI.",
-      tech: "Python, OpenCV, CNN, Speech Recognition"
+      tech: "Python, OpenCV, CNN, Speech Recognition",
+      link: "https://signai-studio.up.railway.app"
     },
     {
       title: "Emotion Detection System",
@@ -30,7 +31,8 @@ const DetailsView = () => {
       category: "Generative AI",
       description: "Created a Generative AI-powered analytics platform that processes CSV/PDF files and provides insights using natural language queries.",
       achievements: "Interactive dashboard with AI-generated data visualization.",
-      tech: "Python, Streamlit, Generative AI, Data Analysis"
+      tech: "Python, Streamlit, Generative AI, Data Analysis",
+      link: "https://datasense-pro.streamlit.app/"
     }
   ];
 
